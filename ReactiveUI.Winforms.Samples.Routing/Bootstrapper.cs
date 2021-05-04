@@ -1,4 +1,6 @@
-﻿namespace ReactiveUI.Winforms.Samples.Routing {
+﻿#nullable enable
+
+namespace ReactiveUI.Winforms.Samples.Routing {
 
 	using System.Windows.Forms;
 	using Splat;
@@ -11,9 +13,6 @@
 
 		private void ConfigureServices() {
 			// Register views
-			if ( Locator.CurrentMutable is null ) {
-				return;
-			}
 
 			Locator.CurrentMutable.Register( () => new ShellView(), typeof( IViewFor<ShellViewModel> ) );
 			Locator.CurrentMutable.Register( () => new HomeView(), typeof( IViewFor<HomeViewModel> ) );

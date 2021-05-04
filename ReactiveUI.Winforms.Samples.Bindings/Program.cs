@@ -1,4 +1,6 @@
-﻿namespace ReactiveUI.Winforms.Samples.Bindings {
+﻿#nullable enable
+
+namespace ReactiveUI.Winforms.Samples.Bindings {
 
 	using System;
 	using System.Windows.Forms;

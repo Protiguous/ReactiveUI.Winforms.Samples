@@ -1,4 +1,6 @@
-﻿namespace ReactiveUI.Winforms.Samples.Commands {
+﻿#nullable enable
+
+namespace ReactiveUI.Winforms.Samples.Commands {
 
 	using System;
 	using System.Windows.Forms;

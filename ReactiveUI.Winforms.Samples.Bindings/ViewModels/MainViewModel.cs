@@ -1,12 +1,14 @@
-﻿namespace ReactiveUI.Winforms.Samples.Bindings.ViewModels {
+﻿#nullable enable
+
+namespace ReactiveUI.Winforms.Samples.Bindings.ViewModels {
 
 	using System;
 
 	public class MainViewModel : ReactiveObject {
 
-		private String _applicationTitle;
+		private String? _applicationTitle;
 
-		private String _valueOne;
+		private String? _valueOne;
 
 		private Int64 _valueTwo;
 
@@ -17,13 +19,13 @@
 			this.ValueTwo = DateTime.Now.Date.ToFileTime();
 		}
 
-		public String ApplicationTitle {
+		public String? ApplicationTitle {
 			get => this._applicationTitle;
 
 			set => this.RaiseAndSetIfChanged( ref this._applicationTitle, value );
 		}
 
-		public String ValueOne {
+		public String? ValueOne {
 			get => this._valueOne;
 
 			set => this.RaiseAndSetIfChanged( ref this._valueOne, value );

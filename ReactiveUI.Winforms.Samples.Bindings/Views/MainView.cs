@@ -1,4 +1,6 @@
-﻿namespace ReactiveUI.Winforms.Samples.Bindings.Views {
+﻿#nullable enable
+
+namespace ReactiveUI.Winforms.Samples.Bindings.Views {
 
 	using System;
 	using System.Windows.Forms;
@@ -33,12 +35,12 @@
 			this.ViewModel = new MainViewModel();
 		}
 
-		public MainViewModel ViewModel { get; set; }
+		public MainViewModel? ViewModel { get; set; }
 
-		Object IViewFor.ViewModel {
+		Object? IViewFor.ViewModel {
 			get => this.ViewModel;
 
-			set => this.ViewModel = ( MainViewModel ) value;
+			set => this.ViewModel = value as MainViewModel;
 		}
 
 	}
